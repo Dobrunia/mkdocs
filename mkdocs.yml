@@ -1,1 +1,38 @@
-site_name: My Docs
+site_name: Custom MkDocs Documentation
+site_description: A modern documentation site built with custom MkDocs theme
+site_author: Documentation Team
+site_url: https://dobrunia.github.io/mkdocs/
+
+theme:
+  name: material
+  custom_dir: mkdocs_theme/custom_theme
+  static_templates:
+    - 404.html
+    - sitemap.xml
+
+extra_css:
+  - assets/css/main.min.css
+  - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/main.min.js
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - API Reference: api-reference.md
+  - Examples: examples.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - codehilite:
+      css_class: highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search

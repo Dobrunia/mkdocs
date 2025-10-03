@@ -1,0 +1,32 @@
+{
+  "name": "custom-mkdocs-theme",
+  "version": "1.0.0",
+  "description": "Custom MkDocs theme with PostCSS processing",
+  "scripts": {
+    "build:css": "postcss mkdocs_theme/custom_theme/assets/css/main.css -o mkdocs_theme/custom_theme/assets/css/main.min.css",
+    "build:js": "terser mkdocs_theme/custom_theme/assets/js/main.js -o mkdocs_theme/custom_theme/assets/js/main.min.js",
+    "build:assets": "npm run build:css && npm run build:js",
+    "validate:html": "html-validate site/**/*.html",
+    "test": "npm run validate:html",
+    "serve": "mkdocs serve",
+    "build": "mkdocs build && npm run build:assets",
+    "deploy": "mkdocs gh-deploy"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-preset-env": "^9.3.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-custom-properties": "^13.3.0",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "terser": "^5.24.0",
+    "html-validate": "^8.7.4"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

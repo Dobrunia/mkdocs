@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% block content %}
+<div class="page-content">
+  <h1 class="page-title">{{ page.title }}</h1>
+
+  <div class="page-meta">
+    {% if page.meta.author %}
+    <span class="meta-author">By {{ page.meta.author }}</span>
+    {% endif %} {% if page.meta.date %}
+    <span class="meta-date">{{ page.meta.date }}</span>
+    {% endif %}
+  </div>
+
+  <div class="page-body">{{ super() }}</div>
+
+  {% if page.toc %}
+  <div class="page-toc">
+    <h3>Table of Contents</h3>
+    {{ page.toc }}
+  </div>
+  {% endif %}
+</div>
+{% endblock %}
