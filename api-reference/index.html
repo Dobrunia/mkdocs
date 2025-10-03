@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern documentation site built with custom MkDocs theme"
+    />
+    <meta name="author" content="Documentation Team" />
+    <meta name="generator" content="MkDocs 1.6.1" />
+
+    <title>API Reference - Custom MkDocs Documentation</title>
+
+    <link rel="canonical" href="https://dobrunia.github.io/mkdocs/api-reference/" />
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+
+    
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    
+    <link rel="stylesheet" href="assets/css/custom.css" />
+     
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href=".." class="brand">
+              <span class="site-title">Custom MkDocs Documentation</span>
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-start">
+               
+              <a class="navbar-item" href="..">Home</a>
+                
+              <a class="navbar-item" href="../getting-started/">Getting Started</a>
+                
+              <a class="navbar-item" href="./">API Reference</a>
+                
+              <a class="navbar-item" href="../examples/">Examples</a>
+               
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="columns">
+          <aside class="sidebar column is-3">
+            <div class="sidebar-content">
+              <nav class="sidebar-nav">
+                 
+                <div class="nav-section">
+                  <a
+                    href=".."
+                    class="nav-link"
+                  >
+                    Home
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="../getting-started/"
+                    class="nav-link"
+                  >
+                    Getting Started
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="./"
+                    class="nav-link active"
+                  >
+                    API Reference
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="../examples/"
+                    class="nav-link"
+                  >
+                    Examples
+                  </a>
+                </div>
+                 
+              </nav>
+            </div>
+          </aside>
+
+          <div class="content column is-9">
+            <article class="content-article">
+              
+<div class="page-content">
+  <h1 class="page-title">API Reference</h1>
+
+  <div class="page-meta">
+     
+  </div>
+
+  <div class="page-body"> <h1 id="api-reference">API Reference<a class="headerlink" href="#api-reference" title="Permanent link">&para;</a></h1>
+<p>This section provides detailed information about the custom theme's API and configuration options.</p>
+<h2 id="theme-configuration">Theme Configuration<a class="headerlink" href="#theme-configuration" title="Permanent link">&para;</a></h2>
+<h3 id="basic-configuration">Basic Configuration<a class="headerlink" href="#basic-configuration" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">theme</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">custom_theme</span>
+<span class="w">  </span><span class="nt">custom_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mkdocs_theme/custom_theme</span>
+<span class="w">  </span><span class="nt">static_templates</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">404.html</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sitemap.xml</span>
+</code></pre></div>
+<h3 id="css-and-javascript">CSS and JavaScript<a class="headerlink" href="#css-and-javascript" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">extra_css</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/css/main.css</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/css/custom.css</span>
+
+<span class="nt">extra_javascript</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">assets/js/main.js</span>
+</code></pre></div>
+<h2 id="template-variables">Template Variables<a class="headerlink" href="#template-variables" title="Permanent link">&para;</a></h2>
+<h3 id="global-variables">Global Variables<a class="headerlink" href="#global-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>config.site_name</code></td>
+<td>Site name from mkdocs.yml</td>
+</tr>
+<tr>
+<td><code>config.site_description</code></td>
+<td>Site description</td>
+</tr>
+<tr>
+<td><code>config.site_author</code></td>
+<td>Site author</td>
+</tr>
+<tr>
+<td><code>page.title</code></td>
+<td>Current page title</td>
+</tr>
+<tr>
+<td><code>page.content</code></td>
+<td>Rendered page content</td>
+</tr>
+<tr>
+<td><code>nav</code></td>
+<td>Navigation structure</td>
+</tr>
+</tbody>
+</table>
+<h3 id="page-variables">Page Variables<a class="headerlink" href="#page-variables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>page.meta.author</code></td>
+<td>Page author (if specified)</td>
+</tr>
+<tr>
+<td><code>page.meta.date</code></td>
+<td>Page date (if specified)</td>
+</tr>
+<tr>
+<td><code>page.toc</code></td>
+<td>Table of contents</td>
+</tr>
+<tr>
+<td><code>page.canonical_url</code></td>
+<td>Canonical URL</td>
+</tr>
+</tbody>
+</table>
+<h2 id="css-classes">CSS Classes<a class="headerlink" href="#css-classes" title="Permanent link">&para;</a></h2>
+<h3 id="layout-classes">Layout Classes<a class="headerlink" href="#layout-classes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>.site-header</code> - Main site header</li>
+<li><code>.navbar</code> - Navigation bar</li>
+<li><code>.main-content</code> - Main content area</li>
+<li><code>.sidebar</code> - Sidebar navigation</li>
+<li><code>.site-footer</code> - Site footer</li>
+</ul>
+<h3 id="content-classes">Content Classes<a class="headerlink" href="#content-classes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>.page-title</code> - Page title styling</li>
+<li><code>.page-meta</code> - Page metadata</li>
+<li><code>.page-body</code> - Main content body</li>
+<li><code>.card</code> - Card component</li>
+<li><code>.hero-section</code> - Hero section</li>
+</ul>
+<h3 id="navigation-classes">Navigation Classes<a class="headerlink" href="#navigation-classes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>.nav-section</code> - Navigation section</li>
+<li><code>.nav-section-title</code> - Section title</li>
+<li><code>.nav-link</code> - Navigation link</li>
+<li><code>.nav-link.active</code> - Active navigation link</li>
+</ul>
+<h2 id="javascript-api">JavaScript API<a class="headerlink" href="#javascript-api" title="Permanent link">&para;</a></h2>
+<h3 id="main-functions">Main Functions<a class="headerlink" href="#main-functions" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Initialize theme functionality</span>
+<span class="nx">initSmoothScrolling</span><span class="p">();</span>
+<span class="nx">initCodeHighlighting</span><span class="p">();</span>
+<span class="nx">initMobileMenu</span><span class="p">();</span>
+<span class="nx">initSearch</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="event-handlers">Event Handlers<a class="headerlink" href="#event-handlers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>DOMContentLoaded</code> - Initialize theme</li>
+<li><code>click</code> - Smooth scrolling for anchor links</li>
+<li><code>input</code> - Search functionality</li>
+<li><code>resize</code> - Responsive behavior</li>
+</ul>
+<h2 id="custom-components">Custom Components<a class="headerlink" href="#custom-components" title="Permanent link">&para;</a></h2>
+<h3 id="hero-section">Hero Section<a class="headerlink" href="#hero-section" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-section&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-title&quot;</span><span class="p">&gt;</span>Title<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-subtitle&quot;</span><span class="p">&gt;</span>Subtitle<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-cta&quot;</span><span class="p">&gt;</span>Call to Action<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="card-component">Card Component<a class="headerlink" href="#card-component" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-title&quot;</span><span class="p">&gt;</span>Card Title<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-content&quot;</span><span class="p">&gt;</span>Card content<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="markdown-extensions">Markdown Extensions<a class="headerlink" href="#markdown-extensions" title="Permanent link">&para;</a></h2>
+<h3 id="code-blocks">Code Blocks<a class="headerlink" href="#code-blocks" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="sb">```python</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">hello_world</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+<span class="sb">```</span>
+</code></pre></div>
+<h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Column 1</th>
+<th>Column 2</th>
+<th>Column 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data 1</td>
+<td>Data 2</td>
+<td>Data 3</td>
+</tr>
+<tr>
+<td>Data 4</td>
+<td>Data 5</td>
+<td>Data 6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h3>
+<p>!!! note "Note"
+This is a note admonition.</p>
+<p>!!! warning "Warning"
+This is a warning admonition.</p>
+<h2 id="customization-examples">Customization Examples<a class="headerlink" href="#customization-examples" title="Permanent link">&para;</a></h2>
+<h3 id="adding-custom-css">Adding Custom CSS<a class="headerlink" href="#adding-custom-css" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c">/* Custom styles */</span>
+<span class="p">.</span><span class="nc">my-custom-class</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#667eea</span><span class="p">;</span>
+<span class="w">  </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="adding-custom-javascript">Adding Custom JavaScript<a class="headerlink" href="#adding-custom-javascript" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Custom functionality</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// Your custom code here</span>
+<span class="p">});</span>
+</code></pre></div>
+<h2 id="performance-optimization">Performance Optimization<a class="headerlink" href="#performance-optimization" title="Permanent link">&para;</a></h2>
+<h3 id="css-optimization">CSS Optimization<a class="headerlink" href="#css-optimization" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use CSS custom properties for theming</li>
+<li>Minimize CSS specificity</li>
+<li>Use efficient selectors</li>
+<li>Leverage CSS Grid and Flexbox</li>
+</ul>
+<h3 id="javascript-optimization">JavaScript Optimization<a class="headerlink" href="#javascript-optimization" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use event delegation</li>
+<li>Implement debouncing for scroll events</li>
+<li>Lazy load non-critical scripts</li>
+<li>Minimize DOM queries</li>
+</ul>
+<h3 id="build-optimization">Build Optimization<a class="headerlink" href="#build-optimization" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Enable HTML minification</li>
+<li>Compress CSS and JavaScript</li>
+<li>Optimize images</li>
+<li>Use CDN for external resources</li>
+</ul> </div>
+
+  
+  <div class="page-toc">
+    <h3>Table of Contents</h3>
+    API Reference - #api-reference
+    Theme Configuration - #theme-configuration
+        Basic Configuration - #basic-configuration
+        CSS and JavaScript - #css-and-javascript
+    Template Variables - #template-variables
+        Global Variables - #global-variables
+        Page Variables - #page-variables
+    CSS Classes - #css-classes
+        Layout Classes - #layout-classes
+        Content Classes - #content-classes
+        Navigation Classes - #navigation-classes
+    JavaScript API - #javascript-api
+        Main Functions - #main-functions
+        Event Handlers - #event-handlers
+    Custom Components - #custom-components
+        Hero Section - #hero-section
+        Card Component - #card-component
+    Markdown Extensions - #markdown-extensions
+        Code Blocks - #code-blocks
+        Tables - #tables
+        Admonitions - #admonitions
+    Customization Examples - #customization-examples
+        Adding Custom CSS - #adding-custom-css
+        Adding Custom JavaScript - #adding-custom-javascript
+    Performance Optimization - #performance-optimization
+        CSS Optimization - #css-optimization
+        JavaScript Optimization - #javascript-optimization
+        Build Optimization - #build-optimization
+
+  </div>
+  
+</div>
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>
+              &copy; 2024 Custom MkDocs Documentation. Built with
+              <a href="https://www.mkdocs.org/">MkDocs</a>.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="https://github.com/Dobrunia/mkdocs" target="_blank" rel="noopener">GitHub</a>
+            <a href="..">Home</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    
+    <script src="assets/js/main.min.js"></script>
+     
+  </body>
+</html>

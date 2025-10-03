@@ -1,170 +1,214 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
-        
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>My Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
-        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script> 
-    </head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern documentation site built with custom MkDocs theme"
+    />
+    <meta name="author" content="Documentation Team" />
+    <meta name="generator" content="MkDocs 1.6.1" />
 
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">My Docs</a>
+    <title>Home - Custom MkDocs Documentation</title>
 
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
+    <link rel="canonical" href="https://dobrunia.github.io/mkdocs/" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png" />
 
-                    <ul class="nav navbar-nav ms-md-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
-        <ul class="nav flex-column">
-            
-            <li class="nav-item" data-bs-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#commands" class="nav-link">Commands</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
-    </div>
-</div></div>
-                    <div class="col-md-9" role="main">
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    
+    <link rel="stylesheet" href="assets/css/custom.css" />
+     
+  </head>
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="." class="brand">
+              <span class="site-title">Custom MkDocs Documentation</span>
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-start">
+               
+              <a class="navbar-item" href=".">Home</a>
+                
+              <a class="navbar-item" href="getting-started/">Getting Started</a>
+                
+              <a class="navbar-item" href="api-reference/">API Reference</a>
+                
+              <a class="navbar-item" href="examples/">Examples</a>
+               
             </div>
+          </div>
         </div>
+      </nav>
+    </header>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+    <main class="main-content">
+      <div class="container">
+        <div class="columns">
+          <aside class="sidebar column is-3">
+            <div class="sidebar-content">
+              <nav class="sidebar-nav">
+                 
+                <div class="nav-section">
+                  <a
+                    href="."
+                    class="nav-link active"
+                  >
+                    Home
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="getting-started/"
+                    class="nav-link"
+                  >
+                    Getting Started
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="api-reference/"
+                    class="nav-link"
+                  >
+                    API Reference
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="examples/"
+                    class="nav-link"
+                  >
+                    Examples
+                  </a>
+                </div>
+                 
+              </nav>
+            </div>
+          </aside>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>From here you can search these documents. Enter your search terms below.</p>
-                <form>
-                    <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
+          <div class="content column is-9">
+            <article class="content-article">
+              
+<div class="page-content">
+  <h1 class="page-title">Home</h1>
+
+  <div class="page-meta">
+     
+  </div>
+
+  <div class="page-body"> <h1 id="welcome-to-custom-mkdocs-documentation">Welcome to Custom MkDocs Documentation<a class="headerlink" href="#welcome-to-custom-mkdocs-documentation" title="Permanent link">&para;</a></h1>
+<div class="hero-section">
+    <h1 class="hero-title">Modern Documentation</h1>
+    <p class="hero-subtitle">Built with custom theme, PostCSS, and GitHub Actions</p>
+    <a href="getting-started.md" class="hero-cta">Get Started</a>
 </div>
 
-    </body>
-</html>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<div class="card">
+    <h3 class="card-title">🎨 Custom Theme</h3>
+    <p class="card-content">Beautiful, responsive design with custom HTML, CSS, and JavaScript components.</p>
+</div>
 
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-09-12 17:05:44.267939+00:00
--->
+<div class="card">
+    <h3 class="card-title">⚡ Fast Build</h3>
+    <p class="card-content">Optimized build pipeline with PostCSS, HTML validation, and asset minification.</p>
+</div>
+
+<div class="card">
+    <h3 class="card-title">🚀 Auto Deploy</h3>
+    <p class="card-content">Automatic deployment to GitHub Pages with every push to main branch.</p>
+</div>
+
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Clone the repository</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Dobrunia/mkdocs.git
+<span class="nb">cd</span><span class="w"> </span>mkdocs
+
+<span class="c1"># Install dependencies</span>
+pip<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
+</code></pre></div>
+<h3 id="development">Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Start development server</span>
+mkdocs<span class="w"> </span>serve
+
+<span class="c1"># Build static site</span>
+mkdocs<span class="w"> </span>build
+</code></pre></div>
+<h3 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
+<p>The site automatically deploys to GitHub Pages when you push to the <code>main</code> branch.</p>
+<h2 id="project-structure">Project Structure<a class="headerlink" href="#project-structure" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mkdocs/
+├── .github/workflows/     # GitHub Actions workflows
+├── assets/                 # Static assets (CSS, JS, images)
+├── docs/                  # Documentation content
+├── mkdocs_theme/          # Custom theme files
+├── mkdocs.yml            # MkDocs configuration
+└── README.md             # Project documentation
+</code></pre></div>
+<h2 id="technologies-used">Technologies Used<a class="headerlink" href="#technologies-used" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>MkDocs</strong> - Static site generator</li>
+<li><strong>Custom Theme</strong> - HTML/CSS/JS template</li>
+<li><strong>PostCSS</strong> - CSS processing and optimization</li>
+<li><strong>GitHub Actions</strong> - CI/CD pipeline</li>
+<li><strong>GitHub Pages</strong> - Hosting platform</li>
+</ul> </div>
+
+  
+  <div class="page-toc">
+    <h3>Table of Contents</h3>
+    Welcome to Custom MkDocs Documentation - #welcome-to-custom-mkdocs-documentation
+    Features - #features
+    Quick Start - #quick-start
+        Installation - #installation
+        Development - #development
+        Deployment - #deployment
+    Project Structure - #project-structure
+    Technologies Used - #technologies-used
+
+  </div>
+  
+</div>
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>
+              &copy; 2024 Custom MkDocs Documentation. Built with
+              <a href="https://www.mkdocs.org/">MkDocs</a>.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="https://github.com/Dobrunia/mkdocs" target="_blank" rel="noopener">GitHub</a>
+            <a href=".">Home</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    
+    <script src="assets/js/main.min.js"></script>
+     
+  </body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern documentation site built with custom MkDocs theme"
+    />
+    <meta name="author" content="Documentation Team" />
+    <meta name="generator" content="MkDocs 1.6.1" />
+
+    <title>Examples - Custom MkDocs Documentation</title>
+
+    <link rel="canonical" href="https://dobrunia.github.io/mkdocs/examples/" />
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+
+    
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    
+    <link rel="stylesheet" href="assets/css/custom.css" />
+     
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href=".." class="brand">
+              <span class="site-title">Custom MkDocs Documentation</span>
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-start">
+               
+              <a class="navbar-item" href="..">Home</a>
+                
+              <a class="navbar-item" href="../getting-started/">Getting Started</a>
+                
+              <a class="navbar-item" href="../api-reference/">API Reference</a>
+                
+              <a class="navbar-item" href="./">Examples</a>
+               
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="columns">
+          <aside class="sidebar column is-3">
+            <div class="sidebar-content">
+              <nav class="sidebar-nav">
+                 
+                <div class="nav-section">
+                  <a
+                    href=".."
+                    class="nav-link"
+                  >
+                    Home
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="../getting-started/"
+                    class="nav-link"
+                  >
+                    Getting Started
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="../api-reference/"
+                    class="nav-link"
+                  >
+                    API Reference
+                  </a>
+                </div>
+                  
+                <div class="nav-section">
+                  <a
+                    href="./"
+                    class="nav-link active"
+                  >
+                    Examples
+                  </a>
+                </div>
+                 
+              </nav>
+            </div>
+          </aside>
+
+          <div class="content column is-9">
+            <article class="content-article">
+              
+<div class="page-content">
+  <h1 class="page-title">Examples</h1>
+
+  <div class="page-meta">
+     
+  </div>
+
+  <div class="page-body"> <h1 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h1>
+<p>This page demonstrates various features and components available in the custom MkDocs theme.</p>
+<h2 id="code-examples">Code Examples<a class="headerlink" href="#code-examples" title="Permanent link">&para;</a></h2>
+<h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate the nth Fibonacci number.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">n</span>
+    <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Example usage</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;F(</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">) = </span><span class="si">{</span><span class="n">fibonacci</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="javascript">JavaScript<a class="headerlink" href="#javascript" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// Modern JavaScript with ES6+ features</span>
+<span class="kd">class</span><span class="w"> </span><span class="nx">DocumentationSite</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kr">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="w"> </span><span class="nx">url</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">name</span><span class="p">;</span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">url</span><span class="p">;</span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="nx">initialized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="k">async</span><span class="w"> </span><span class="nx">initialize</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">await</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">loadAssets</span><span class="p">();</span>
+<span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">setupEventListeners</span><span class="p">();</span>
+<span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">initialized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`</span><span class="si">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="sb"> initialized successfully`</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">&#39;Initialization failed:&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">error</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="nx">loadAssets</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="c1">// Simulate asset loading</span>
+<span class="w">      </span><span class="nx">setTimeout</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="nx">setupEventListeners</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;DOMContentLoaded&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">this</span><span class="p">.</span><span class="nx">onDOMReady</span><span class="p">();</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="nx">onDOMReady</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;DOM is ready!&#39;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Usage</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">site</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">DocumentationSite</span><span class="p">(</span><span class="s1">&#39;Custom MkDocs&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;https://example.com&#39;</span><span class="p">);</span>
+<span class="nx">site</span><span class="p">.</span><span class="nx">initialize</span><span class="p">();</span>
+</code></pre></div>
+<h3 id="css">CSS<a class="headerlink" href="#css" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c">/* Modern CSS with custom properties */</span>
+<span class="p">:</span><span class="nd">root</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nv">--primary-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#667eea</span><span class="p">;</span>
+<span class="w">  </span><span class="nv">--secondary-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#764ba2</span><span class="p">;</span>
+<span class="w">  </span><span class="nv">--text-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#2c3e50</span><span class="p">;</span>
+<span class="w">  </span><span class="nv">--bg-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#f8f9fa</span><span class="p">;</span>
+<span class="w">  </span><span class="nv">--border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">  </span><span class="nv">--shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">  </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--border-radius</span><span class="p">);</span>
+<span class="w">  </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="nf">var</span><span class="p">(</span><span class="nv">--shadow</span><span class="p">);</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="kt">rem</span><span class="p">;</span>
+<span class="w">  </span><span class="k">transition</span><span class="p">:</span><span class="w"> </span><span class="k">transform</span><span class="w"> </span><span class="mf">0.3</span><span class="kt">s</span><span class="w"> </span><span class="kc">ease</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">card</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">transform</span><span class="p">:</span><span class="w"> </span><span class="nb">translateY</span><span class="p">(</span><span class="mi">-2</span><span class="kt">px</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c">/* Responsive design */</span>
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<span class="w">    </span><span class="k">margin-bottom</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h2 id="interactive-components">Interactive Components<a class="headerlink" href="#interactive-components" title="Permanent link">&para;</a></h2>
+<h3 id="tabs">Tabs<a class="headerlink" href="#tabs" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Tab 1</label><div class="tabbed-content"></div>
+</div>
+<p>Content for tab 1 goes here.</p>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Tab 2</label><div class="tabbed-content"></div>
+</div>
+<p>Content for tab 2 goes here.</p>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Tab 3</label><div class="tabbed-content"></div>
+</div>
+<p>Content for tab 3 goes here.</p>
+<h3 id="code-blocks-with-copy">Code Blocks with Copy<a class="headerlink" href="#code-blocks-with-copy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Install dependencies</span>
+npm<span class="w"> </span>install<span class="w"> </span>mkdocs<span class="w"> </span>mkdocs-material
+
+<span class="c1"># Start development server</span>
+mkdocs<span class="w"> </span>serve
+
+<span class="c1"># Build for production</span>
+mkdocs<span class="w"> </span>build
+</code></pre></div>
+<h2 id="layout-examples">Layout Examples<a class="headerlink" href="#layout-examples" title="Permanent link">&para;</a></h2>
+<h3 id="hero-section">Hero Section<a class="headerlink" href="#hero-section" title="Permanent link">&para;</a></h3>
+<div class="hero-section">
+    <h1 class="hero-title">Example Hero</h1>
+    <p class="hero-subtitle">This is an example hero section with custom styling</p>
+    <a href="#" class="hero-cta">Get Started</a>
+</div>
+
+<h3 id="card-grid">Card Grid<a class="headerlink" href="#card-grid" title="Permanent link">&para;</a></h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; margin: 2rem 0;">
+    <div class="card">
+        <h3 class="card-title">Feature 1</h3>
+        <p class="card-content">Description of the first feature with detailed information.</p>
+    </div>
+    <div class="card">
+        <h3 class="card-title">Feature 2</h3>
+        <p class="card-content">Description of the second feature with detailed information.</p>
+    </div>
+    <div class="card">
+        <h3 class="card-title">Feature 3</h3>
+        <p class="card-content">Description of the third feature with detailed information.</p>
+    </div>
+</div>
+
+<h2 id="typography-examples">Typography Examples<a class="headerlink" href="#typography-examples" title="Permanent link">&para;</a></h2>
+<h3 id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h3>
+<h1 id="h1-heading">H1 Heading<a class="headerlink" href="#h1-heading" title="Permanent link">&para;</a></h1>
+<h2 id="h2-heading">H2 Heading<a class="headerlink" href="#h2-heading" title="Permanent link">&para;</a></h2>
+<h3 id="h3-heading">H3 Heading<a class="headerlink" href="#h3-heading" title="Permanent link">&para;</a></h3>
+<h4 id="h4-heading">H4 Heading<a class="headerlink" href="#h4-heading" title="Permanent link">&para;</a></h4>
+<h5 id="h5-heading">H5 Heading<a class="headerlink" href="#h5-heading" title="Permanent link">&para;</a></h5>
+<h6 id="h6-heading">H6 Heading<a class="headerlink" href="#h6-heading" title="Permanent link">&para;</a></h6>
+<h3 id="text-formatting">Text Formatting<a class="headerlink" href="#text-formatting" title="Permanent link">&para;</a></h3>
+<p><strong>Bold text</strong> and <em>italic text</em> and <code>inline code</code>.</p>
+<p>~~Strikethrough text~~ and ==highlighted text==.</p>
+<h3 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h3>
+<h4 id="unordered-list">Unordered List<a class="headerlink" href="#unordered-list" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Nested item 2.1</li>
+<li>Nested item 2.2</li>
+<li>Item 3</li>
+</ul>
+<h4 id="ordered-list">Ordered List<a class="headerlink" href="#ordered-list" title="Permanent link">&para;</a></h4>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h3 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>This is a blockquote example.</p>
+<p>It can span multiple lines and provides
+a nice way to highlight important information.</p>
+</blockquote>
+<h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custom Theme</td>
+<td>✅ Complete</td>
+<td>Fully functional custom theme</td>
+</tr>
+<tr>
+<td>PostCSS</td>
+<td>✅ Complete</td>
+<td>CSS processing and optimization</td>
+</tr>
+<tr>
+<td>GitHub Actions</td>
+<td>✅ Complete</td>
+<td>Automated build and deployment</td>
+</tr>
+<tr>
+<td>Mobile Responsive</td>
+<td>✅ Complete</td>
+<td>Works on all device sizes</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>🔄 In Progress</td>
+<td>Basic search functionality</td>
+</tr>
+</tbody>
+</table>
+<h2 id="advanced-examples">Advanced Examples<a class="headerlink" href="#advanced-examples" title="Permanent link">&para;</a></h2>
+<h3 id="math-equations">Math Equations<a class="headerlink" href="#math-equations" title="Permanent link">&para;</a></h3>
+<p>Inline math: $E = mc^2$</p>
+<p>Block math:</p>
+<p>$$
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+$$</p>
+<h3 id="mermaid-diagrams">Mermaid Diagrams<a class="headerlink" href="#mermaid-diagrams" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>graph TD
+    A[Start] --&gt; B{Decision}
+    B --&gt;|Yes| C[Action 1]
+    B --&gt;|No| D[Action 2]
+    C --&gt; E[End]
+    D --&gt; E
+</code></pre></div>
+<h3 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h3>
+<p>!!! note "Note"
+This is a note admonition with important information.</p>
+<p>!!! tip "Tip"
+This is a tip admonition with helpful advice.</p>
+<p>!!! warning "Warning"
+This is a warning admonition with cautionary information.</p>
+<p>!!! danger "Danger"
+This is a danger admonition with critical information.</p>
+<h2 id="performance-metrics">Performance Metrics<a class="headerlink" href="#performance-metrics" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>First Contentful Paint</td>
+<td>1.2s</td>
+<td>&lt; 2s</td>
+</tr>
+<tr>
+<td>Largest Contentful Paint</td>
+<td>2.1s</td>
+<td>&lt; 2.5s</td>
+</tr>
+<tr>
+<td>Cumulative Layout Shift</td>
+<td>0.05</td>
+<td>&lt; 0.1</td>
+</tr>
+<tr>
+<td>Time to Interactive</td>
+<td>2.8s</td>
+<td>&lt; 3s</td>
+</tr>
+</tbody>
+</table>
+<h2 id="browser-support">Browser Support<a class="headerlink" href="#browser-support" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Browser</th>
+<th>Version</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome</td>
+<td>90+</td>
+<td>✅ Full</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>88+</td>
+<td>✅ Full</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>14+</td>
+<td>✅ Full</td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>90+</td>
+<td>✅ Full</td>
+</tr>
+<tr>
+<td>IE</td>
+<td>11</td>
+<td>⚠️ Limited</td>
+</tr>
+</tbody>
+</table> </div>
+
+  
+  <div class="page-toc">
+    <h3>Table of Contents</h3>
+    Examples - #examples
+    Code Examples - #code-examples
+        Python - #python
+        JavaScript - #javascript
+        CSS - #css
+    Interactive Components - #interactive-components
+        Tabs - #tabs
+        Code Blocks with Copy - #code-blocks-with-copy
+    Layout Examples - #layout-examples
+        Hero Section - #hero-section
+        Card Grid - #card-grid
+    Typography Examples - #typography-examples
+        Headings - #headings
+H1 Heading - #h1-heading
+    H2 Heading - #h2-heading
+        H3 Heading - #h3-heading
+            H4 Heading - #h4-heading
+                H5 Heading - #h5-heading
+                    H6 Heading - #h6-heading
+        Text Formatting - #text-formatting
+        Lists - #lists
+            Unordered List - #unordered-list
+            Ordered List - #ordered-list
+        Blockquotes - #blockquotes
+        Tables - #tables
+    Advanced Examples - #advanced-examples
+        Math Equations - #math-equations
+        Mermaid Diagrams - #mermaid-diagrams
+        Admonitions - #admonitions
+    Performance Metrics - #performance-metrics
+    Browser Support - #browser-support
+
+  </div>
+  
+</div>
+
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <p>
+              &copy; 2024 Custom MkDocs Documentation. Built with
+              <a href="https://www.mkdocs.org/">MkDocs</a>.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="https://github.com/Dobrunia/mkdocs" target="_blank" rel="noopener">GitHub</a>
+            <a href="..">Home</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    
+    <script src="assets/js/main.min.js"></script>
+     
+  </body>
+</html>
